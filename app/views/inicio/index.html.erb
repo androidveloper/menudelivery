@@ -41,9 +41,11 @@
         <!-- Header -->
         <div class="container">
             <div class="row header">
+                <!--
                 <div class="col-sm-4 logo">
                     <h1><a href="index.html">Comenzales.com</a> <span>.</span></h1>
                 </div>
+                -->
                 <!--<div class="col-sm-8 call-us">
                     <p>Tel: <span>0039 123 45 789</span> | Skype: <span>info@domain.it</span></p>
                 </div>-->
@@ -69,16 +71,6 @@
                         </ul>
                     </div>
                     -->
-                    <div id="user_nav">
-                        <% if user_signed_in? %>
-                            Hola: <%= current_user.email %>
-                            <%= link_to "Salir", destroy_user_session_path, :method => :delete %> -
-                        <%else%>
-                            <%= link_to "Registrate", new_user_registration_path %> -
-                            <%= link_to "Inicia Sesion", new_user_session_path %> -
-                        <%end%>
-                        <a href="quienesSomos.html">Quienes somos</a>
-                    </div>
                 </div>
 
             </div>
@@ -288,6 +280,7 @@
     </script>
   
     <!-- CONTENT-WRAPPER SECTION END-->
+    <!--
     <footer>
         <div class="container">
             <div class="row">
@@ -297,7 +290,7 @@
 
             </div>
         </div>
-    </footer>
+    </footer>-->
     </body>
 
 </html>
