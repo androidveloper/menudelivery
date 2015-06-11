@@ -1,2 +1,4 @@
-/tmp
-/log
+.bundle
+tmp/
+log/*.log
+public/system
