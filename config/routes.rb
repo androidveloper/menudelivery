@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
   
+  get 'menu/index'
+
   devise_for :users
   get 'inicio/index'
 
   #root to: 'products#index'
-  root to: 'inicio#index'
+  #root to: 'inicio#index'
+  root to: 'menu#index'
+  
   resources :products
   resources :products
   resources :products
